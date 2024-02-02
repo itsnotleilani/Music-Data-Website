@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Spotify Profile</title>
+        <script src="src/script.ts" type="module"></script>
+        <link rel="stylesheet" href="src/style.css">
+      </head>
+    <body class="gray column">
+      <h1 class="darkpink">Your Spotify Wrapped Today</h1>
+
+      <section id="profile" class="box">
+      <div class="row">
+        <h2>Logged in as <span id="displayName"></span></h2>
+        <span id="avatar"></span>
+      </div>
+      <div class="column">
+        <p>User ID: <span id="id"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <p>Spotify URI: <a id="uri" href="#"></a></p>
+        <p>Link: <a id="url" href="#"></a></p>
+        <p>Profile Image: <span id="imgUrl"></span></p>
+      </div>
+      </section>
+      <div class="row">
+        <section id="topArtists" class="column box">
+          <h2>Top Artists</h2>
+          <div class="widget-container">
+            <div class="row widget"><span id="songimg1"></span><span id="top1"></span></div>
+            <div class="row widget"><span id="songimg2"></span><span id="top2"></span></div>
+            <div class="row widget"><span id="songimg3"></span><span id="top3"></span></div>
+            <div class="row widget"><span id="songimg4"></span><span id="top4"></span></div>
+            <div class="row widget"><span id="songimg5"></span><span id="top5"></span></div>
+          </div>
+        </section>
+        <section id="topTracks" class="column box">
+          <h2>Top Tracks</h2>
+          <div class="widget-container">
+            <div class="row widget"><span id="songimgt1"></span><span id="topt1"></span></div>
+            <div class="row widget"><span id="songimgt2"></span><span id="topt2"></span></div>
+            <div class="row widget"><span id="songimgt3"></span><span id="topt3"></span></div>
+            <div class="row widget"><span id="songimgt4"></span><span id="topt4"></span></div>
+            <div class="row widget"><span id="songimgt5"></span><span id="topt5"></span></div>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <div class="column box">
+          <h2>Top Genres</h2>
+          <div class="widget-container">
+            <div class="row widget"></span><span id="genre1"></span></div>
+            <div class="row widget"></span><span id="genre2"></span></div>
+            <div class="row widget"></span><span id="genre3"></span></div>
+            <div class="row widget"></span><span id="genre4"></span></div>
+            <div class="row widget"></span><span id="genre5"></span></div>
+          </div>
+        </div>
+        <div class="column box">
+          <h2>Get Reccommendations</h2>
+          <div class="widget-container">
+          <div class="row widget"><span id="recimg"></span><span id="rectitle"></span><span id="recname"></span></div>
+          </div>
+        </div>
+      </div>
+      <div id="spotifyPlayer"></div>
+    </body>
+</html>
